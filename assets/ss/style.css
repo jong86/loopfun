@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background-color: #3D3A37;
+}
+
+#mainTable {
+  border: 2px solid #3D3A37;
+  background-color: #3D3A37;
+  border-spacing: 2px;
+}
+
+th {
+  background-color: #538181;
+  height: 50;
+}
+
+.transportControl {
+  color: black;
+}
+
+
+td {
+  width: 20px;
+}
+
+td.noteGrid {
+  border: 0px solid #595337;
+  border-radius: 6px;
+  padding: 0px;
+}
+
+td.noteGrid:hover {
+  background-color: #6EF200 !important;
+}
+
+td.noteGrid:active {
+  background-color: #87CA50 !important;
+}
+
+#rowIdentifier {
+  width: 64px;
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  color: #82C7E5;
+  font-size: 10px;
+}
+
+.rowDrums #rowIdentifier {
+  background-color: #12185E;
+}
+
+.rowBass #rowIdentifier {
+  background-color: #510759;
+}
+
+.rowLead #rowIdentifier {
+  background-color: #065F32;
+}
+
+.rowDrums {
+  height: 32px;
+}
+
+.rowBass {
+  height: 16px;
+}
+
+.rowLead {
+  height: 16px;
+}
+

@@ -1,0 +1,43 @@
+<html>
+
+  <head>
+    <title>Loop Fun</title>
+
+    <link rel="stylesheet" href="assets/ss/style.css">
+  </head>
+
+  <body>
+
+
+
+    <table id="mainTable">
+      <tbody id="tableBody">
+        <div id="playheadLine" onresize="windowResize()"></div>
+
+        <th colspan="65" id="tableHeading">
+          <button class="transportControl" onclick="transportPlay()">
+            PLAY
+          </button>
+          <button class="transportControl" onclick="transportPause()">
+            PAUSE
+          </button>
+          <button class="transportControl" onclick="transportStop()">
+            STOP
+          </button>
+
+          <form action="/action_page.php" method="get">
+          BPM:
+            <input type="range" name="points" min="70" max="139">
+
+          </form>
+
+        </th>
+
+      </tbody>
+    </table>
+
+  </body>
+
+  <script src="script.js"></script>
+
+</html>
