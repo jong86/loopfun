@@ -8,33 +8,18 @@
 
   <body>
 
+    <div id="mainTable">
 
+      <div id="tableHeading">
+        <button class="transportControl" onclick="transportPlay()">PLAY</button>
+        <button class="transportControl" onclick="transportPause()">PAUSE</button>
+        <button class="transportControl" onclick="transportStop()">STOP</button>
+        <div id="bpm">BPM:<span id="bpmSlider"></span><span id="bpmValue"></span></div>
+      </div>
 
-    <table id="mainTable">
-      <tbody id="tableBody">
-        <div id="playheadLine" onresize="windowResize()"></div>
+      <div id="playheadLine" onresize="windowResize()"></div>
 
-        <th colspan="65" id="tableHeading">
-          <button class="transportControl" onclick="transportPlay()">
-            PLAY
-          </button>
-          <button class="transportControl" onclick="transportPause()">
-            PAUSE
-          </button>
-          <button class="transportControl" onclick="transportStop()">
-            STOP
-          </button>
-
-          <form action="/action_page.php" method="get">
-          BPM:
-            <input type="range" name="points" min="70" max="139">
-
-          </form>
-
-        </th>
-
-      </tbody>
-    </table>
+    </div>
 
   </body>
 
